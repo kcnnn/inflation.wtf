@@ -1,8 +1,8 @@
-# fees.wtf
+# inflation.wtf
 
-Calculate fees for multichain network.
+Calculate inflation for multichain network.
 
-<a href="https://fees.sigri44.com" target="_blank">fees.sigri44.com</a>
+
 
 ## Supported chains
 - Ethereum
@@ -11,5 +11,4 @@ Calculate fees for multichain network.
 - xDai
 - Fantom
 
-## Coming Soon
-- Avalanche (waiting for API access)
+
