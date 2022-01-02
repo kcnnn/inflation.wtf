@@ -31,7 +31,7 @@ function comma(x) {
 async function getTxs(address) {
     const chainConfig = []
 
-    chainConfig['0x1'] = {id: '0x1', shortname: 'eth', name:'Ethereum', symbol: 'eth', coingecko_name: 'ethereum', token: 'Ξ', color: '#03a9f4', explorer_uri: 'https://api.etherscan.io', key: 'NQ15J9JTPH3TXSZF7UQCNCXAS8CDVNQGJY'}
+    chainConfig['0x1'] = {id: '0x1', shortname: 'eth', name:'Ethereum', symbol: 'eth', coingecko_name: 'ethereum', token: 'Ξ', color: '#03a9f4', explorer_uri: 'https://api.etherscan.io', key: 'KKEHS5KMBY8KJSTBKUXRT9X33NZUNDPSHD'}
     chainConfig['0x38'] = {id: '0x38', shortname: 'bsc', name:'Binance Smart Chain', symbol: 'bnb', coingecko_name: 'binancecoin', token: 'Ḇ', color: "#f4ce03", explorer_uri: 'https://api.bscscan.com', key: 'UWB7YUCVQXT7TGFK41TNJSJBIHDQ1JGU9D'}
     chainConfig['0x64'] = {id: '0x64', shortname: 'xdai', name:'xDai', symbol: 'xdai', coingecko_name: 'xdai', token: 'Ẍ', color: '#48a9a6', explorer_uri: 'https://blockscout.com/xdai/mainnet', key: ''}
     chainConfig['0x89'] = {id: '0x89', shortname: 'matic', name:'Polygon', symbol: 'matic', coingecko_name: 'matic-network', token: 'M̃', color: '#9d03f4', explorer_uri: 'https://api.polygonscan.com', key: 'QDPWKASEUSSYTKX9ZVMSSQGX4PTCZGHNC8'}
