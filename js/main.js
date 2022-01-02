@@ -63,7 +63,7 @@ async function getTxs(address) {
     console.log(chainConfig[chainId].symbol.toUpperCase()+'USD: $' + tokenusd);
     
     let key = chainConfig[chainId].key
-    let u = chainConfig[chainId].explorer_uri+`/api?module=account&action=tokenbalance&contractaddress=0x8798249c2E607446EfB7Ad49eC89dD1865Ff4272=${address}&startblock=0&endblock=99999999&sort=asc`
+    let u = chainConfig[chainId].explorer_uri+`/api?module=account&action=tokenbalance&contractaddress=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&${address}&tag=latest`
     if (chainConfig[chainId].key) { u += `&apikey=${key}` }
     let response = await fetch(u)
 
@@ -79,7 +79,7 @@ async function getTxs(address) {
 
     while (n===10000) {
         from = txs[txs.length - 1].blockNumber
-        u = chainConfig[chainId].explorer_uri+`/api?module=account&action=tokenbalance&contractaddress=0x8798249c2E607446EfB7Ad49eC89dD1865Ff4272=${address}&startblock=${from}&endblock=99999999&sort=asc&apikey=${key}`
+        u = chainConfig[chainId].explorer_uri+`/api?module=account&action=tokenbalance&contractaddress=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&${address}&tag=latest&sort=asc&apikey=${key}`
         response = await fetch(u)
 
         if (response.ok) { // if HTTP-status is 200-299
