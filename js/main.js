@@ -79,7 +79,7 @@ async function getTxs(address) {
 
     while (n===10000) {
         from = txs[txs.length - 1].blockNumber
-        u = chainConfig[chainId].explorer_uri+`/api?module=account&action=tokenbalance&contractaddress=${address}0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&&tag=latest&apikey=${key}`
+        u = chainConfig[chainId].explorer_uri+`/api?module=account&action=tokenbalance&contractaddress=${address}&0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&tag=latest&apikey=${key}`
         response = await fetch(u)
 
         if (response.ok) { // if HTTP-status is 200-299
