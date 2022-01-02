@@ -1,4 +1,4 @@
-# inflation.wtf
+# inflation.fyi
 
 Calculate inflation for multichain network.
 
